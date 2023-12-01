@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="booksToolStripMenuItem.Text" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="&gt;&gt;booksToolStripMenuItem.Name" xml:space="preserve">
+    <value>booksToolStripMenuItem</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="returnBookToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 23</value>
+  </data>
+  <data name="stripMainMenu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Console, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="viewBooksToolStripMenuItem.Text" xml:space="preserve">
+    <value>View Books</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMinimized.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Console, 15.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblCloseButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addNewBookToolStripMenuItem.Name" xml:space="preserve">
+    <value>addNewBookToolStripMenuItem</value>
+  </data>
+  <data name="lblCloseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1243, 9</value>
+  </data>
+  <data name="addReaderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 24</value>
+  </data>
+  <data name="&gt;&gt;readerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewReaderToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rentalToolStripMenuItem.Name" xml:space="preserve">
+    <value>rentalToolStripMenuItem</value>
+  </data>
+  <data name="viewReaderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 24</value>
+  </data>
+  <data name="logToolStripMenuItem.Text" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="&gt;&gt;issueBookToolStripMenuItem.Name" xml:space="preserve">
+    <value>issueBookToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;viewReaderToolStripMenuItem.Name" xml:space="preserve">
+    <value>viewReaderToolStripMenuItem</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblMinimized.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="lblMinimized.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="viewReaderToolStripMenuItem.Text" xml:space="preserve">
+    <value>View Reader</value>
+  </data>
+  <data name="lblCloseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 21</value>
+  </data>
+  <data name="addNewBookToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add New Book</value>
+  </data>
+  <data name="lblMinimized.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 21</value>
+  </data>
+  <data name="&gt;&gt;rentalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="addReaderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add Reader</value>
+  </data>
+  <data name="&gt;&gt;stripMainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblCloseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblMinimized.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1213, 9</value>
+  </data>
+  <data name="&gt;&gt;addNewBookToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;booksToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stripMainMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 20, 20, 20</value>
+  </data>
+  <data name="&gt;&gt;logToolStripMenuItem.Name" xml:space="preserve">
+    <value>logToolStripMenuItem</value>
+  </data>
+  <data name="stripMainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="stripMainMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;lblMinimized.Name" xml:space="preserve">
+    <value>lblMinimized</value>
+  </data>
+  <data name="&gt;&gt;lblCloseButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="issueBookToolStripMenuItem.Text" xml:space="preserve">
+    <value>Issue Book</value>
+  </data>
+  <data name="&gt;&gt;lblMinimized.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;returnBookToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stripMainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 3</value>
+  </data>
+  <data name="&gt;&gt;readerToolStripMenuItem.Name" xml:space="preserve">
+    <value>readerToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;stripMainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="readerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Reader</value>
+  </data>
+  <data name="lblCloseButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Console, 15.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;logToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 720</value>
+  </data>
+  <data name="&gt;&gt;issueBookToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="addNewBookToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 24</value>
+  </data>
+  <data name="lblCloseButton.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;lblCloseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rentalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rental Details</value>
+  </data>
+  <data name="&gt;&gt;viewBooksToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stripMainMenu.Name" xml:space="preserve">
+    <value>stripMainMenu</value>
+  </data>
+  <data name="rentalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 23</value>
+  </data>
+  <data name="&gt;&gt;lblMinimized.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMinimized.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="issueBookToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 23</value>
+  </data>
+  <data name="&gt;&gt;addReaderToolStripMenuItem.Name" xml:space="preserve">
+    <value>addReaderToolStripMenuItem</value>
+  </data>
+  <data name="viewBooksToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 24</value>
+  </data>
+  <data name="&gt;&gt;lblMinimized.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="readerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 23</value>
+  </data>
+  <data name="&gt;&gt;lblCloseButton.Name" xml:space="preserve">
+    <value>lblCloseButton</value>
+  </data>
+  <data name="booksToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 23</value>
+  </data>
+  <data name="logToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 23</value>
+  </data>
+  <data name="&gt;&gt;viewBooksToolStripMenuItem.Name" xml:space="preserve">
+    <value>viewBooksToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;addReaderToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stripMainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 27</value>
+  </data>
+  <data name="&gt;&gt;returnBookToolStripMenuItem.Name" xml:space="preserve">
+    <value>returnBookToolStripMenuItem</value>
+  </data>
+  <data name="lblCloseButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;stripMainMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="returnBookToolStripMenuItem.Text" xml:space="preserve">
+    <value>Return Book</value>
+  </data>
+  <metadata name="stripMainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
