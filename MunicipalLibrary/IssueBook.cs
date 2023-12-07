@@ -28,10 +28,9 @@ namespace MunicipalLibrary
             dtpBookIssueDate.Format = DateTimePickerFormat.Custom;
 
             OracleDB db = new OracleDB();
-            OracleCommand cmd = new OracleCommand();
             db.OpenConnection();
 
-            cmd = new OracleCommand("SELECT TITLE FROM LIBRARY", db.GetConnection());
+            OracleCommand cmd = new OracleCommand("SELECT TITLE FROM LIBRARY", db.GetConnection());
             OracleDataReader dr = cmd.ExecuteReader();
 
             while (dr.Read())
@@ -53,9 +52,9 @@ namespace MunicipalLibrary
                 String persNo = tbPersNo.Text;
 
                 OracleDB db = new OracleDB();
-                OracleCommand cmd = new OracleCommand();
-
                 db.OpenConnection();
+
+                OracleCommand cmd = new OracleCommand();
                 cmd.Connection = db.GetConnection();
                 cmd.CommandText = "SELECT * FROM READER WHERE READERPERSNO = '" + persNo + "'";
                 cmd.BindByName = true;
@@ -122,6 +121,7 @@ namespace MunicipalLibrary
 
                     OracleDB db = new OracleDB();
                     db.OpenConnection();
+
                     OracleCommand cmd = new OracleCommand("INSERT INTO RENTAL (REANAME, REASURNAME, REACONTACT, REAEMAIL," +
                         "REAPERSNO, BOOKTITLE, BOOKISSUEDATE) VALUES (:REANAME, :REASURNAME, :REACONTACT, :REAEMAIL," +
                         ":REAPERSNO, :BOOKTITLE, :BOOKISSUEDATE)", db.GetConnection());

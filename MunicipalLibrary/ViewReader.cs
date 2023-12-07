@@ -31,6 +31,8 @@ namespace MunicipalLibrary
             DateTime selectedDate = dtpDateAdded.Value;
 
             OracleDB db = new OracleDB();
+            db.OpenConnection();
+
             OracleCommand cmd = new OracleCommand("UPDATE READER SET READERNAME = :READERNAME, READERSURNAME = :READERSURNAME, " +
                 "READERCONTACT = :READERCONTACT, READEREMAIL = :READEREMAIL, READERPERSNO = :READERPERSNO, " +
                 "DATEADDED = :DATEADDED WHERE READERID = :READERID", db.GetConnection());
@@ -44,7 +46,6 @@ namespace MunicipalLibrary
             cmd.Parameters.Add(":DATEADDED", OracleDbType.Date).Value = selectedDate;
             cmd.BindByName = true;
 
-            db.OpenConnection();
             cmd.ExecuteNonQuery();
             db.CloseConnection();
         }

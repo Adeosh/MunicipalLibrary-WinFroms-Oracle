@@ -24,6 +24,8 @@ namespace MunicipalLibrary
                 DateTime selectedDate = dtpPurchaseDate.Value;
 
                 OracleDB db = new OracleDB();
+                db.OpenConnection();
+
                 OracleCommand cmd = new OracleCommand("INSERT INTO LIBRARY (TITLE, AUTHOR, PRICE, QUANTITY, RELEASEDATE, PURCHASEDATE) " +
                     "VALUES (:TITLE, :AUTHOR, :PRICE, :QUANTITY, :RELEASEDATE, :PURCHASEDATE)", db.GetConnection());
 
@@ -34,8 +36,6 @@ namespace MunicipalLibrary
                 cmd.Parameters.Add(":RELEASEDATE", OracleDbType.Int32).Value = tbReleaseDate.Text.ToString();
                 cmd.Parameters.Add(":PURCHASEDATE", OracleDbType.Date).Value = selectedDate;
                 cmd.BindByName = true;
-
-                db.OpenConnection();
 
                 int rows = cmd.ExecuteNonQuery();
                 if (rows > 0)

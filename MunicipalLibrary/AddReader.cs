@@ -42,6 +42,8 @@ namespace MunicipalLibrary
                 DateTime selectedDate = dtpDateAdded.Value;
 
                 OracleDB db = new OracleDB();
+                db.OpenConnection();
+
                 OracleCommand cmd = new OracleCommand("INSERT INTO READER (READERNAME, READERSURNAME, READERCONTACT, READEREMAIL, READERPERSNO, DATEADDED) " +
                     "VALUES (:READERNAME, :READERSURNAME, :READERCONTACT, :READEREMAIL, :READERPERSNO, :DATEADDED)", db.GetConnection());
 
@@ -52,8 +54,6 @@ namespace MunicipalLibrary
                 cmd.Parameters.Add(":READERPERSNO", OracleDbType.Varchar2).Value = tbPersNo.Text.ToString();
                 cmd.Parameters.Add(":DATEADDED", OracleDbType.Date).Value = selectedDate;
                 cmd.BindByName = true;
-
-                db.OpenConnection();
 
                 int rows = cmd.ExecuteNonQuery();
                 if (rows > 0)

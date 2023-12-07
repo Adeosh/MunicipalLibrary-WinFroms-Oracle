@@ -32,9 +32,9 @@ namespace MunicipalLibrary
         private void RentalDetails_Load(object sender, EventArgs e)
         {
             OracleDB db = new OracleDB();
-            OracleCommand cmd = new OracleCommand();
-
             db.OpenConnection();
+
+            OracleCommand cmd = new OracleCommand();
             cmd.Connection = db.GetConnection();
             cmd.CommandText = "SELECT * FROM RENTAL WHERE BOOKRETURNDATE IS NULL";
             cmd.BindByName = true;

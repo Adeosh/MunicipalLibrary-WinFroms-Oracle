@@ -31,6 +31,8 @@ namespace MunicipalLibrary
             DateTime selectedDate = dtpPurchaseDate.Value;
 
             OracleDB db = new OracleDB();
+            db.OpenConnection();
+
             OracleCommand cmd = new OracleCommand("UPDATE LIBRARY SET TITLE = :TITLE, AUTHOR = :AUTHOR, " +
                 "PRICE = :PRICE, QUANTITY = :QUANTITY, RELEASEDATE = :RELEASEDATE, " +
                 "PURCHASEDATE = :PURCHASEDATE WHERE BOOKID = :BOOKID", db.GetConnection());
@@ -44,7 +46,6 @@ namespace MunicipalLibrary
             cmd.Parameters.Add(":PURCHASEDATE", OracleDbType.Date).Value = selectedDate;
             cmd.BindByName = true;
 
-            db.OpenConnection();
             cmd.ExecuteNonQuery();
             db.CloseConnection();
         }
@@ -81,7 +82,6 @@ namespace MunicipalLibrary
             }
 
             OracleDB db = new OracleDB();
-
             db.OpenConnection();
 
             OracleCommand cmd = new OracleCommand("SELECT * FROM LIBRARY WHERE BOOKID = " + BookId + "", db.GetConnection());
